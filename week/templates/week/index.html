@@ -1,0 +1,57 @@
+{% load static %}
+<head>
+    <title>Week</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'week/style.css' %}">
+</head>
+<body>
+    <p class="text">Составьте меню на неделю из вариантов представленных на сайте</p>
+    <button type="button"><a href="{% url 'home' %}">Вернуться к списку блюд</a></button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+            {% for day in week %}<th scope="col">{{ day.day_of_week }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Завтрак</th>
+          <td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td>
+        </tr>
+        <tr>
+          <th scope="row">Обед</th>
+          <td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td>
+        </tr>
+            <tr>
+          <th scope="row">Перекус</th>
+          <td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td>
+        </tr>
+        <tr>
+          <th scope="row">Ужин</th>
+          <td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select>
+            </td><td><select name="Выбрать">{% for meal in menu %}<option>{{ meal.title }}</option>{% endfor %}</select></td>
+        </tr>
+      </tbody>
+    </table>
+</body>

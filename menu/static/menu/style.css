@@ -1,0 +1,59 @@
+.menu_img {
+    width: 350px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+.box {
+    width: 80%;
+    height: 280px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 5px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.text {
+    margin-left: 15px;
+}
+
+.img {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+h1 {
+    font-size: 45px;
+    margin-left: 25px;
+    font-weight: 100;
+}
+
+.description {
+    font-size: 25px;
+}
+
+body {
+    background-color: rgb(216, 201, 201);
+}
+
+button {
+    margin: 10px;
+    margin-left: 20px;
+    color: black;
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: white;
+}
+
+a {
+    color: black;
+    font-weight: 900;
+}
